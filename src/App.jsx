@@ -43,22 +43,23 @@ const reload = () => {
         <div className='container'>
           <h2>BMI Calculator</h2>
           <form onSubmit={calBMI}>
-            <div>
-              <label>weight(ibs)</label>
+
+            <div className='weight'>
+              <label>weight(ibs): </label>
               <input type="text" placeholder='Enter weight value' value={weight} onChange={(event)=>setweight(event.target.value)} />
             </div>
 
-            <div>
-              <label>height (in)</label>
+            <div className='height'>
+              <label>height(in):</label>
               <input type="text" placeholder='Enter height value' value={height} onChange={(event)=>setheight(event.target.value)} />
             </div>
 
-            <div>
+            <div className='button'>
               <button className='btn' type="submit" >Submit</button>
               <button className='btn btn-outline' onClick={reload} type="submit">Reload</button>
             </div>
 
-            <div className='center'>
+            <div className='message'>
               <h3>Your BMI is:{bmi}</h3>
               <p>{message}</p>
             </div>

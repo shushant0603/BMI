@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  color: white;
+}
+.App{
+  height: 100vh;
+  width: 100%;
+  display:flex;
+ justify-content: center; 
+ /* align-items: center; */
+}
+.container h2{
+  /* margin-bottom: 10rem; */
+  font-size: 5rem;
+}
+.weight, .height, .button {
+  margin: 2rem 0; /* This will add 15px margin above and below each element */
+  font-size: 3rem;
+}
+form{
+  justify-content: center; 
+ border: 2px solid red;
+ background:#5b3a3a;
+ margin-top: 5rem;
+ /* align-items: center; */
+}
+.weight input{
+  width: 30rem;
+  height: 4rem;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 2rem;
+}
+.height input{
+  width: 30rem;
+  height: 4rem;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 2rem;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.button button{
+  height: 3rem;
+  width: 15rem;
+  background-color: red;
+  color: white;
+}
+.message h3,p{
+font-size: 2rem;
+}
+
